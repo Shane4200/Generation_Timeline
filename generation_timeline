@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int birth_year;
+
+    printf("Please enter your year of birth: ");
+    scanf("%d", &birth_year);
+
+    if (birth_year >= 1997 && birth_year <= 2012) {
+        printf("You belong to Generation Z.\n");
+    } else if (birth_year >= 1981 && birth_year <= 1996) {
+        printf("You belong to Generation Y (Millennials).\n");
+    } else if (birth_year >= 1965 && birth_year <= 1980) {
+        printf("You belong to Generation X.\n");
+    } else if (birth_year >= 1946 && birth_year <= 1964) {
+        printf("You belong to the Baby Boomer generation.\n");
+    } else if (birth_year < 1946) {
+        printf("You belong to the Silent Generation or the Greatest Generation.\n");
+    } else {
+        printf("Invalid input. Please enter a valid year of birth.\n");
+    }
+
+    return 0;
+} 
